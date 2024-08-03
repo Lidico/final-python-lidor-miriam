@@ -39,4 +39,4 @@
               file: ./Dockerfile
               push: true
               tags: |
-                lidico36/final-python:${{ github.sha }}
+                lidico36/lidor-miriam-final:${{ github.sha }}
