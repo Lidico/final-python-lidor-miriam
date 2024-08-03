@@ -37,4 +37,4 @@
             with:
               push: true
               tags: |
-                lidico36/final-python: ${{ github.sha }}
+                lidico36/final-python:${{ github.sha }}
