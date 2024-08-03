@@ -26,6 +26,10 @@ jobs:
           username: ${{ secrets.docker_user }}
           password: ${{ secrets.docker_pass }}
 
+      - name: Clean Docker build cache
+        run: |
+          docker builder prune --all --force
+
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
